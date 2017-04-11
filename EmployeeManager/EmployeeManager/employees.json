@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "0325f030-c169-4a84-9818-b9b3765f30b8",
+    "Firstname": "Jenny",
+    "Lastname": "Lumpa",
+    "Email": "lumpa@email.com",
+    "PhoneNumber": "1234567890",
+    "JobTitle": "QA Analyst",
+    "Created": "2017-04-07T08:45:58.1808018-04:00",
+    "LastModified": "2017-04-07T08:45:58.1808018-04:00"
+  },
+  {
+    "Id": "f042d7fe-77c2-45af-a634-273865fcde17",
+    "Firstname": "Jon",
+    "Lastname": "Lumpa",
+    "Email": "lumpa@email.com",
+    "PhoneNumber": "1234567890",
+    "JobTitle": "QA Analyst",
+    "Created": "2017-04-07T08:46:23.7511487-04:00",
+    "LastModified": "2017-04-07T08:46:23.7511487-04:00"
+  }
+]

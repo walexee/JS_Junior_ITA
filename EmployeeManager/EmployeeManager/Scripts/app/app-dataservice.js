@@ -8,12 +8,29 @@ var service = app.dataService || (app.dataService = {});
         return $.get(url);
     };
 
-    vm.saveEmployee = function () {
-
+    vm.addEmployee = function (employee) {
+        return $.post(url, employee);
     };
 
-    vm.deleteEmployee = function () {
+    vm.updateEmployee = function (employee) {
+        var putUrl = url + '/' + employee.id;
 
+        return $.ajax(putUrl, {
+            data: JSON.stringify(employee),
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            method: 'PUT'
+        });
+    }
+
+    vm.deleteEmployee = function () {
+        var deleteUrl = url + '/' + employee.id;
+
+        return $.ajax(deleteUrl, {
+            //dataType: 'json',
+            //contentType: 'application/json; charset=utf-8',
+            method: 'DELETE'
+        });
     }
 
 })(service);

@@ -54,7 +54,7 @@ namespace EmployeeManager
             }
 
             dbEmployee.Firstname = employee.Firstname;
-            dbEmployee.LastModified = employee.LastModified;
+            dbEmployee.Lastname = employee.Lastname;
             dbEmployee.JobTitle = employee.JobTitle;
             dbEmployee.PhoneNumber = employee.PhoneNumber;
             dbEmployee.Email = employee.Email;

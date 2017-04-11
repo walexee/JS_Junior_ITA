@@ -8,7 +8,11 @@ var employees = app.employees || (app.employees = {});
         service.getEmployees().done(populateEmployeeRows);
 
         $('button#btn-add').click(function () {
-            modal.open();
+            modal.open().done(function (data) {
+                if (data) {
+                    addEmployee(data);
+                }
+            });
         });
     };
 
@@ -16,16 +20,32 @@ var employees = app.employees || (app.employees = {});
         var html = '';
 
         for (var i = 0; i < data.length; i++) {
-            html += '<tr>';
-            html += '<td>' + data[i].Firstname + '</td>';
-            html += '<td>' + data[i].Lastname + '</td>';
-            html += '<td>' + data[i].JobTitle + '</td>';
-            html += '<td>' + data[i].Email + '</td>';
-            html += '<td>' + data[i].PhoneNumber + '</td>';
-            html += '</tr>';
+            html += getEmployeeRow(data[i]);
         }
 
         $('#employee-rows').html(html);
+    }
+
+    function getEmployeeRow(emp) {
+        var html = '';
+
+        html += '<tr>';
+        html += '<td>' + emp.Firstname + '</td>';
+        html += '<td>' + emp.Lastname + '</td>';
+        html += '<td>' + emp.JobTitle + '</td>';
+        html += '<td>' + emp.Email + '</td>';
+        html += '<td>' + emp.PhoneNumber + '</td>';
+        html += '</tr>';
+
+        return html;
+    }
+
+    function addEmployee(data) {
+        service.addEmployee(data).done(function (emp) {
+            var html = getEmployeeRow(emp);
+
+            $('#employee-rows').append(html);
+        });
     }
 
 })(employees, app.dataService, app.common);

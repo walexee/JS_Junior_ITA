@@ -18,5 +18,25 @@
     "JobTitle": "QA Analyst",
     "Created": "2017-04-07T08:46:23.7511487-04:00",
     "LastModified": "2017-04-07T08:46:23.7511487-04:00"
+  },
+  {
+    "Id": "cd91a325-6b12-4daa-b746-aafdf3990c22",
+    "Firstname": "Lola",
+    "Lastname": "Penny",
+    "Email": "penny@email.com",
+    "PhoneNumber": "56755858855",
+    "JobTitle": "Developer",
+    "Created": "2017-04-11T11:48:41.0305617-04:00",
+    "LastModified": "2017-04-11T11:48:41.0305617-04:00"
+  },
+  {
+    "Id": "4ad36bca-9be7-41cb-839c-7bd25592c444",
+    "Firstname": "Kelly",
+    "Lastname": "Roland",
+    "Email": "dkdk@example.com",
+    "PhoneNumber": "565657577",
+    "JobTitle": "Project Manager",
+    "Created": "2017-04-11T12:02:38.5677545-04:00",
+    "LastModified": "2017-04-11T12:02:38.5677545-04:00"
   }
 ]

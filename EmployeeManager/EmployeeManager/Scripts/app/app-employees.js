@@ -1,9 +1,15 @@
 ﻿var app = app || {};
 var employees = app.employees || (app.employees = {});
 
-(function (vm, service) {
+(function (vm, service, common) {
+    var modal = new common.Modal('#employee-modal');
+
     vm.init = function () {
         service.getEmployees().done(populateEmployeeRows);
+
+        $('button#btn-add').click(function () {
+            modal.open();
+        });
     };
 
     function populateEmployeeRows(data) {
@@ -22,4 +28,4 @@ var employees = app.employees || (app.employees = {});
         $('#employee-rows').html(html);
     }
 
-})(employees, app.dataService);
+})(employees, app.dataService, app.common);

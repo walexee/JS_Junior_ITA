@@ -21,6 +21,7 @@ namespace EmployeeManager
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                    "~/Scripts/app/app-common.js",
                     "~/Scripts/app/app-dataservice.js",
                     "~/Scripts/app/app-employees.js"));
 

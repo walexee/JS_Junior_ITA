@@ -182,6 +182,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\app\app-common.js" />
     <Content Include="Scripts\app\app-dataservice.js" />
     <Content Include="Scripts\app\app-employees.js" />
     <Content Include="Scripts\bootstrap.js" />
